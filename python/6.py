@@ -5,6 +5,11 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
+    a = input()
+    if a == 'a' or a == 'e' or a == 'i' or a == 'u' or a == 'o':
+        print("O")
+    else:
+        print("X")
 
     return
 

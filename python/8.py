@@ -5,6 +5,14 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
+    n=int(input())
+    c=0
+    m=1
+    for i in range(1,n+1):
+        c+=i
+        m*=i
+    print(c)
+    print(m)
 
     return
 

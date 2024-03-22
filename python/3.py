@@ -5,6 +5,12 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
+    a=int(input())
+    if a<12:
+        print("AM")
+    else:
+        print("PM")
+    return
 
     return
 
