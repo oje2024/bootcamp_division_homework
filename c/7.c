@@ -7,31 +7,29 @@
 
 int main() {
     int mon=0,year=0;
-    int arr1[4]={4,6,9,11};
-    int arr2[7]={1,3,5,7,8,10,12};
     scanf("%d",&year);
     scanf("%d",&mon);
-    for(int i=0;i<4;i++){
-        if(arr1[i]==mon){
-            printf("30");
-            break;
-        }
+    if(mon==1 || mon==3 || mon==5||mon==7||mon==8||mon==10||mon==12){
+        printf("31");
     }
-    for(int k=0;k<7;k++){
-        if(arr2[k]==mon){
-            printf("31");
-            break;
-        }
-    }
-    if(mon==2){
-        if(year%4==0){
-            if(year%100!=0 || year%400==0){
-                printf("29");
+    else{
+        if(mon==2){
+            if(year%4==0){
+                if(year%100!=0 || year%400==0)
+                {
+                    printf("29");
+                }
+                else{
+                    printf("28");
+                }
             }
             else{
                 printf("28");
             }
-            }
         }
+        else{
+            printf("30");
+        }
+    }
     return 0;
 }
