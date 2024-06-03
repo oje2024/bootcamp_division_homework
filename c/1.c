@@ -6,7 +6,11 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
+    char arr1[3];
+    scanf("%s",&arr1);
+    for(int i=2;i>-1;i--){
+        printf("%c",arr1[i]);
+    }
 
     return 0;
 }

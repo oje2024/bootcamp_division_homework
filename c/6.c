@@ -6,7 +6,21 @@
 #include <stdio.h>
 
 int main() {
-    // 이곳에 코드를 작성해주세요!
-
+    char list[5]="aeiuo";
+    char name;
+    int num=0;
+    scanf("%c",&name);
+    for(int i=0;i<5;i++){
+        if(list[i]==name){
+            printf("O");
+            break;
+        }
+        else{
+            num+=1;
+        }
+    }
+    if(num==5){
+        printf("X");
+    }
     return 0;
 }
